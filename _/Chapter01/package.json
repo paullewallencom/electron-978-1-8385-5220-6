@@ -1,0 +1,32 @@
+{
+  "name": "my-first-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build:macos": "electron-builder --macos --dir",
+    "dist:macos": "electron-builder --macos",
+    "build:linux": "electron-builder --linux --dir",
+    "dist:linux": "electron-builder --linux",
+    "build:windows": "electron-builder --win --dir",
+    "dist:windows": "electron-builder --win"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^7.0.0",
+    "electron-builder": "^21.2.0"
+  },
+  "build": {
+    "appId": "com.my.app.id",
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "linux": {
+      "category": "Utility"
+    }
+  }
+}
